@@ -1,5 +1,11 @@
 
-# Google Sheets Sync 如何使用（By David Williames）
+# Google Sheets Sync 插件文档
+
+>本文翻译自 [Google Sheets Sync](https://www.figma.com/c/plugin/735770583268406934/Google-Sheets-Sync)  插件的文档。起初并没有特别说要翻译它，不过在阅读过程中越发觉得这个插件还蛮有意思，就随手将翻译了。
+>  
+> 然后我也像插件作者一样，做了一个 [Figma prototype](https://www.figma.com/proto/e1OFx6ds4bCHzqWWgyFxFc/Google-Sheets-Sync-%E2%80%93-Documentation-in-Chinese?node-id=3%3A2&viewport=74%2C1061%2C1&scaling=min-zoom) 来展示这个文档，内容和这篇文章一样，不过阅读体验会好很多。
+>  
+> 同时我做了[两个示例](https://www.figma.com/proto/9YZkD4xQHtX6yuoeOxickK/tovi_data?node-id=123%3A1683&scaling=min-zoom)，也可以去玩一下。
 
 ## 快速使用
 
@@ -11,7 +17,7 @@
 
 ### 2.给图层命名
 
-**一切都取决与你如何给图层命名。** 这个插件是通过合适的命名，来知道该同步哪些内容到图层的。（这个在下方 '给图层命名' 部分详细说明）
+**一切都取决于你如何给图层命名。** 这个插件是通过合适的命名，来知道该同步哪些内容到图层的。（这个在下方 '给图层命名' 部分详细说明）
 
 ### 3.运行插件
 
@@ -25,7 +31,7 @@
 
 比如：你想获取 'Title' 这个值，就给你的图层取名为 '#Title'。
 
-![](images/1.png)
+![](images/google_sheets_sync_1.png)
 
 > 注意：不区分大小写，而且会忽略空格、下划线和中横线。所以，如果你有个数据叫 'First name'，那么你命名为 'First name', 'first_name', 'layer #first-name', 'firstName' 效果都是一样的。这对于有偏好的命名格式的小伙伴还是挺友好的。
 
@@ -35,7 +41,7 @@
 
 但是如果你想获取一个横向表格的关键词，要确保每个标题标签要加粗，这样就可以使表格的第一列变为关键词。
 
-![](images/2.png)
+![](images/google_sheets_sync_2.png)
 
 ## 查询特定的行或列
 
@@ -47,7 +53,7 @@
 
 如果要返回随机的值，则添加 '.x'。
 
-![](images/3.png)
+![](images/google_sheets_sync_3.png)
 
 > 注意：默认情况下，在同一个查找标签下，会一个接一个地返回该标签下的值，这和在图层名后添加 '.n' 效果是一样的。
 
@@ -75,7 +81,7 @@
 - 选择你想要重命名的图层
 - 选择你想要重命名图层的横、栏或单元格 —— 当你鼠标悬停在上面时会先出现一个工具提示来提示你重命名的图层名
 
-![](images/4.png)
+![](images/google_sheets_sync_4.png)
 
 > 你还可以点击工作表的名字来给你当前的 Figma Page 重命名。
 
@@ -83,7 +89,7 @@
 
 在 Figma 里同步图片和同步文字非常类似。如果你 Google 表格里的数据值是一个图片链接地址，同时有 Figma 形状引用了那个值，那么这个图片就会被下载下来作为该图层的形状的填充。
 
-![](images/5.png)
+![](images/google_sheets_sync_5.png)
 
 > 注意：下载大图片会需要点时间
 
@@ -91,7 +97,7 @@
 
 根据你命名的 Figma 图层的类型，和 Google 表格里的值 相结合，我们可以在图层上做一些非常 Cool 的东西出来。
 
-![](images/6.png)
+![](images/google_sheets_sync_6.png)
 
 ### 组件
 
